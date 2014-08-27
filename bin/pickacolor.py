@@ -26,7 +26,7 @@ def get_random_color():
 #	else:
 #		fname = "none.txt"
 
-	fname = "colors.txt"
+	fname = "../lib/colors.txt"
 	random_line = random.randrange(0,file_len(fname)-1)
 
 	return  read_this_line(fname, random_line)
