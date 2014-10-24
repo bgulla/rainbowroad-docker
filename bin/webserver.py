@@ -4,7 +4,13 @@ import sys
 import pickacolor
 
 PORT_NUMBER = 8001
-color = pickacolor.get_random_color()
+
+if len(sys.argv) > 1:
+	print sys.argv
+	color = sys.argv[1]
+	print "color is: ", color
+else:
+	color = pickacolor.get_random_color()
 
 header="""
 <html>

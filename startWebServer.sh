@@ -1,4 +1,11 @@
 #!/bin/bash
 
 cd bin
-python webserver.py
+
+if [ -z "$1" ]
+  then
+    python webserver.py
+  else
+    echo "$1"
+    python webserver.py $1
+fi
