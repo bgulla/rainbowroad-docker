@@ -1,0 +1,14 @@
+{
+  "id": "rainbow-road",
+  "cpus": 0.2,
+  "mem": 64.0,
+  "instances": 2,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "bgulla/rainbow-road",
+      "network": "HOST"
+    }
+  }
+}
+
