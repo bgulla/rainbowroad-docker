@@ -7,7 +7,9 @@
     "type": "DOCKER",
     "docker": {
       "image": "bgulla/rainbow-road",
-      "network": "HOST"
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8001, "hostPort": 0, "servicePort": 9000, "protocol": "tcp" },
     }
   }
 }
