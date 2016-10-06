@@ -10,6 +10,7 @@
       "network": "BRIDGE",
       "portMappings": [
         { "containerPort": 8001, "hostPort": 0, "servicePort": 9000, "protocol": "tcp" }
+      ]
     }
   }
 }
